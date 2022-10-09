@@ -1,0 +1,19 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "ecommerce",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [
+    "mercado",
+    "liebre",
+    "ecommerce"
+  ],
+  "author": "gaston rojas",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
