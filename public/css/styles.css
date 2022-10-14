@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
    margin: 0px;
+   padding: 0px;
    box-sizing: border-box;
 }
 :root{
     --amarillo: #EAC926;
     --azul: #03264C;
     --celeste: #1259c3;
-    --gris-oscuro: #666;
+    --gris-oscuro: #666666;
     --gris-claro: #ebebeb;
     --verde: #39b54a;
 }
@@ -20,56 +21,78 @@ html{
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
 }
- header{
-    background-color: var(--amarillo);
- }
- ul{
-   display: none;
- }
 
  main{
    text-align: center;
    width: 90%;
+   margin: auto;
  }
 
 article{
-   padding: 10px;
+   text-align: start;
+   padding: 10px 0;
    margin-bottom: 10px;
  }
- article div{
-   border-top: soid 1px #ebebeb;
-   margin: 15px;
- }
- article div div {
-   position: relative;
-   margin: auto;
-   padding: 5px;
-   width: 20px;
-   height: 20px;
-   color: var(--verde);
-   border: solid 1px var(--verde);
-   border-radius: 100%;
- }
 
- h3{
-   margin: 15px;
+
+h3{
+    margin: 15px;
     font-size: 24px;
- }
+   }
+   
+footer{
+      text-align: center;
+   }
+footer i{
+      color: var(--celeste);
+      font-size: 10ex;
+}  
 
- footer{
-    text-align: center;
- }
-  footer i{
-    color: var(--celeste);
-    font-size: 10ex;
-  }
+.icono-camion{
+   display: block;
+   font-size: 16px;
+   padding: 5px;
+   width: 30px;
+   height: 30px;
+   border: 1px solid #39b54a;
+   background-color: #FFF;
+   border-radius: 50%;
+   position: absolute;
+   right: 20px;
+   top: -15px;
+   }
 
- .precio{
-    font-size: 18px;
+.main-header{
+       background-color: var(--amarillo);
+       padding: 20px;
+    }
+.logo, .buscador{
+   width: 50%;
+}
+.buscador{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.buscador input{
+   max-width: 80%;
+}
+.main-header-top-nav{
+   display: flex;
+   flex-wrap: wrap;
+}
+.header-title{
+   font-weight: 400;
+   text-align: center;
+   color: #222222;
+}
+.precio{
+      font-size: 18px;
  }
  .descuento{
     font-size: 16px;
     color: var(--verde);
+    padding-left: 5px;
  }
 
  .descripcion{
@@ -77,37 +100,117 @@ article{
  }
 
  .burger-menu{
-    text-align: center;
+   background-color: var(--azul);
+   color: var(--gris-claro);
+   font-size: 18px;
+   display: block;
+   max-width: 50px;
+   padding: 15px 0;
+   border-radius: 8px;
+   margin: auto;
+   text-align: center;
  }
-
- .burger-menu i{
-    color: var(--gris-claro);
-    background-color: var(--celeste);
-    font-size: 30px;
-    padding: 5px;
-    border-radius: 10%;
-    margin: 15px;
+.main-navbar{
+   display: none;
+}
+ .main-navbar a{
+   text-decoration: none;
+   color: var(--gris-oscuro);
+   display: inline-block;
+   padding: 5px 0;
+   font-size: 17px;
  }
+ .main-navbar ul{
+   list-style: none;
+ }
+ .precio-flex{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+ }
+ .precio-flex .precio{
+   flex-grow: 0.3;
+ }
+ .precio-flex .descuento{
+   flex-grow: 0.7;
+ }
+ .texto-articulo{
+   border-top: var(--gris-claro) solid 1px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-start;
+   padding: 10px;
+}
+.productos{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
 
  @media (min-width: 361px) {
+  
    article{
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      margin: 10px;
+      width: 42%;
    }
    .descripcion{
       display: block;
       font-size: 16px;
       margin-top: 10px;
    }
-   ul{
-      display: block;
+   .main-navbar{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+   .main-navbar ul{
+      display: flex;
+      font-size: 10px;
+
+   }
+   .main-navbar ul li{
+      margin: 5px;
+      font-size: 10px;
    }
    .burger-menu{
       display: none;
    }
+   .main-header-top-nav{
+      display: flex;
+ 
+   }
+   .header-title{
+      max-width: 350px;
+      text-align: left;
+   }
  }
 
  @media (min-width: 769px) {
-
+   main{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   article{
+      width: 22%;
+   }
+   
+   .main-header-top-nav, .main-navbar{
+      max-width: 900px;
+      margin: auto;
+   }
+   .main-header-top-nav{
+      align-items: center;
+   }
+   .main-navbar{
+      margin-top: 50px;
+   }
+   .header-title{
+      max-width: none;
+   }
 
 }
 
