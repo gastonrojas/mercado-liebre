@@ -19,7 +19,9 @@
             <h2 class="header-title"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
         </div>
         
-        <a href="#" class="burger-menu"><i class="fas fa-bars"></i></a>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
         
         <nav class="main-navbar">
             <ul class="left-navbar">
@@ -30,30 +32,33 @@
              </ul>
 
              <ul class="right-navbar">
-                <li><a href="#">Creá tu cuenta <i class="fas fa-hand-holding-usd"></i></a></li>
-                <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/register">Creá tu cuenta <i class="fas fa-hand-holding-usd"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
              </ul>
         </nav>
-        
     </header>
-    <img src="/images/img-home-banner.jpg" alt="">
-    <main>
+    <div>
+        <img src="/images/img-home-banner.jpg" alt="home-banner" class="home-banner">
+    </div>
+    <main class="main">
         <section>
             <h3>Sección: Basado en tu última visita</h3>
             <div class="productos">
                 <article>
+                    <!-- <h2 class="tag">Cafetera Moulinex</h2> -->
                     <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera-moulinex">
                     <div class="texto-articulo">
                         <i class="fas fa-truck icono-camion"></i>
                         <div class="precio-flex">
                             <p class="precio">$6.770</p>
-                            <p class="descuento">40% OFF</p>
+                            <p class="descuento">40% Off</p>
                         </div>
                         <p class="descripcion">Cafetera Moulinex</p>
                     </div>
                 </article>
                 <article>
+                    <!-- <h2 class="tag">MacBook Pro 2019</h2> -->
                     <img src="/images/img-macbook-pro-2019.jpg" alt="macbookpro2019">
                     <div class="texto-articulo">
                         <i class="fas fa-truck icono-camion"></i>
@@ -139,22 +144,30 @@
         </section>
     </main>
     <footer>
-        <i class="fas fa-credit-card"></i>
-        <h4>Pagá con tarjeta o en efectivo</h4>
-        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en</p>
-        <p>puntos de pago. ¡Y siempre es seguro!</p>
-        <br>
-        <i class="fas fa-gift"></i>
-        <h4>Envío gratis desde $ 2.500</h4>
-        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de</p>
-        <p>productos. Es un beneficio de Mercado Puntos.</p>
-        <br>
-        <i class="fas fa-user-shield"></i>
-        <h4>Seguridad, de principio a fin</h4>
-        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,</p>
-        <p>porque estás siempre protegid@.</p>
+        <div class="footer-items">
+            <div>
+                <i class="fas fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en</p>
+                <p>puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+           
+            <div>
+                <i class="fas fa-gift"></i>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de</p>
+                <p>productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+    
+            <div>
+                <i class="fas fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,</p>
+                <p>porque estás siempre protegid@.</p>
+            </div>
+        </div>
 
-        <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+        <h4 class="copyright">Copyright © 1999-2022 MercadoLiebre S.R.L.</h4>
     </footer>
 </body>
 </html>
